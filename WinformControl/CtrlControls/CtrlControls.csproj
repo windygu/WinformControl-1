@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E9EF7ED-8DC5-4498-ABD4-9AEE871DD500}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CtrlControls</RootNamespace>
+    <AssemblyName>CtrlControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\DefWindowProc.cs" />
+    <Compile Include="Enum\EImageListDrawFlags.cs" />
+    <Compile Include="Enum\EMouseState.cs" />
+    <Compile Include="Enum\ERoundStyle.cs" />
+    <Compile Include="Enum\ESystemButton.cs" />
+    <Compile Include="Enum\WindowsMessage.cs" />
+    <Compile Include="Enum\WindowStyle.cs" />
+    <Compile Include="Enum\WM_NCHITTEST.cs" />
+    <Compile Include="Enum\WM_SYSCOMMAND_WPARAM.cs" />
+    <Compile Include="ExButton\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExButton\ButtonEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExButton\ButtonEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExCheckBox\CheckBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExCheckBox\CheckBoxEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExCheckBox\CheckBoxEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExComboBox\ComboBoxEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExDataGridView\DataGridViewExCalendarCell.cs" />
+    <Compile Include="ExDataGridView\DataGridViewExCalendarEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExDataGridView\DataGridViewExCalendarColumn.cs" />
+    <Compile Include="ExDataGridView\DataGridViewExLinkEx.cs" />
+    <Compile Include="ExDataGridView\DataGridViewExLinkCellEx.cs" />
+    <Compile Include="ExDataGridView\DataGridViewEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExDataGridView\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExDataGridView\DataGridViewEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExDataGridView\DataGridViewExLinkCellEx.Method.cs" />
+    <Compile Include="ExDataGridView\DataGridViewExLinkCellEx.Var.cs" />
+    <Compile Include="ExDataGridView\DataGridViewExLinkColumnEx.cs" />
+    <Compile Include="ExForm\FormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExForm\FormEx.Method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExForm\FormEx.Prop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExForm\FormEx.Var.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExGroupBox\GroupBoxConstants.cs" />
+    <Compile Include="ExGroupBox\GroupBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExGroupBox\GroupBoxEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExGroupBox\GroupBoxEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExGroupBox\Grouper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExImageLink\ImageLinkEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExImageLink\ImageLinkEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExImageLink\ImageLinkEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListBox\ListBoxExCollection.cs" />
+    <Compile Include="ExListBox\ListBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListBox\ListBoxExItem.cs" />
+    <Compile Include="ExListView\ListViewEx.Class.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListView\ListViewEx.Const.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListView\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListView\ListViewEx.Method.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListView\ListViewEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExListView\ListViewEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExMenu\MenuRenderer.cs" />
+    <Compile Include="ExMenu\MenuRenderer.Prop.cs" />
+    <Compile Include="ExMenu\MenuRenderer.Var.cs" />
+    <Compile Include="ExPopup\GripBounds.cs" />
+    <Compile Include="ExPopup\PopupEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExProgressBar\ProgressBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExProgressBar\ProgressBarEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExProgressBar\ProgressBarEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExRadioButton\RadioButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExRadioButton\RadioButtonEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExRadioButton\RadioButtonEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarEx.Method.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarEx.Prop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarEx.Var.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarExControlDesigner.cs" />
+    <Compile Include="ExTabControl\TabControlEx.Method.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTabControl\TabControlEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTabControl\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTabControl\TabControlEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.Designer.cs">
+      <DependentUpon>TextBoxIconEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.Event.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.Method.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.Prop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExTextBoxIcon\TextBoxIconEx.Var.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExTextBox\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTextBox\TextBoxEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExTextBox\TextBoxEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExToolButton\ToolButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExToolButton\ToolButtonEx.Method.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExToolButton\ToolButtonEx.Prop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExToolButton\ToolButtonEx.Var.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExToolStrip\ToolStripExRenderer.cs" />
+    <Compile Include="ExToolStrip\ToolStripExRenderer.Prop.cs" />
+    <Compile Include="ExToolStrip\ToolStripExRenderer.Var.cs" />
+    <Compile Include="Helper\ColorHelper.cs" />
+    <Compile Include="Helper\DrawHelper.cs" />
+    <Compile Include="Helper\GraphicsPathHelper.cs" />
+    <Compile Include="Helper\TextHelper.cs" />
+    <Compile Include="Helper\Win32Helper.cs" />
+    <Compile Include="Helper\WinAPIDllImport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Struct\MINMAXINFO.cs" />
+    <Compile Include="Struct\HDITEM.cs" />
+    <Compile Include="Struct\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="Struct\RECT.cs" />
+    <Compile Include="Test.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CtrlResource\CtrlResource.csproj">
+      <Project>{9D4A30F8-D2CC-4A32-93B1-B8FCF7304553}</Project>
+      <Name>CtrlResource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExComboBox\ComboBoxEx.resx">
+      <DependentUpon>ComboBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExTextBoxIcon\TextBoxIconEx.resx">
+      <DependentUpon>TextBoxIconEx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

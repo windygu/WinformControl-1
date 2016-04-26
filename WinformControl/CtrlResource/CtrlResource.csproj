@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D4A30F8-D2CC-4A32-93B1-B8FCF7304553}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CtrlResource</RootNamespace>
+    <AssemblyName>CtrlResource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Button\btn_border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Button\btn_down.png" />
+    <EmbeddedResource Include="Button\btn_focus.png" />
+    <EmbeddedResource Include="Button\btn_highlight.png" />
+    <EmbeddedResource Include="Button\btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckBox\checkbox_highlight.png" />
+    <EmbeddedResource Include="CheckBox\checkbox_normal.png" />
+    <EmbeddedResource Include="CheckBox\checkbox_highlight_checked.png" />
+    <EmbeddedResource Include="CheckBox\checkbox_normal_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckBox\checkbox_indeterminate_normal.png" />
+    <EmbeddedResource Include="CheckBox\checkbox_indeterminate_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\form_border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageLink\imagelink_webconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\form_close_down.png" />
+    <EmbeddedResource Include="Form\form_close_highlight.png" />
+    <EmbeddedResource Include="Form\form_close_normal.png" />
+    <EmbeddedResource Include="Form\form_max_down.png" />
+    <EmbeddedResource Include="Form\form_max_highlight.png" />
+    <EmbeddedResource Include="Form\form_max_normal.png" />
+    <EmbeddedResource Include="Form\form_mini_down.png" />
+    <EmbeddedResource Include="Form\form_mini_highlight.png" />
+    <EmbeddedResource Include="Form\form_mini_normal.png" />
+    <EmbeddedResource Include="Form\form_restore_down.png" />
+    <EmbeddedResource Include="Form\form_restore_highlight.png" />
+    <EmbeddedResource Include="Form\form_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadioButton\radiobtn_highlight.png" />
+    <EmbeddedResource Include="RadioButton\radiobtn_normal.png" />
+    <EmbeddedResource Include="RadioButton\radiobtn_highlight_checked.png" />
+    <EmbeddedResource Include="RadioButton\radiobtn_normal_checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TextBox\textbox_border_over.png" />
+    <EmbeddedResource Include="TextBox\textbox_border_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProgressBar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Menu\menu_arrow.png" />
+    <EmbeddedResource Include="Menu\menu_bkg.png" />
+    <EmbeddedResource Include="Menu\menu_bkg_border.png" />
+    <EmbeddedResource Include="Menu\menu_check.png" />
+    <EmbeddedResource Include="Menu\menu_cutling.png" />
+    <EmbeddedResource Include="Menu\menu_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabControl\tab_arrow_down.png" />
+    <EmbeddedResource Include="TabControl\tab_arrow_move.png" />
+    <EmbeddedResource Include="TabControl\tab_head_bkg_normal.png" />
+    <EmbeddedResource Include="TabControl\tab_head_bkg_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabControl\tab_head_bkg_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListView\listview_item_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataGridView\datagridview_linkex_black.png" />
+    <EmbeddedResource Include="DataGridView\datagridview_linkex_card.png" />
+    <EmbeddedResource Include="DataGridView\datagridview_linkex_force_invite.png" />
+    <EmbeddedResource Include="DataGridView\datagridview_linkex_invite.png" />
+    <EmbeddedResource Include="DataGridView\datagridview_linkex_record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolStrip\toolstripbtn_overflow.png" />
+    <EmbeddedResource Include="ToolStrip\toolstripbtn_vertical_separator.png" />
+    <EmbeddedResource Include="ToolStrip\toolstripbtn_down.png" />
+    <EmbeddedResource Include="ToolStrip\toolstripbtn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolButton\toolbutton_weibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolButton\toolbutton_down.png" />
+    <EmbeddedResource Include="ToolButton\toolbutton_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolButton\toolbutton_down_left.png" />
+    <EmbeddedResource Include="ToolButton\toolbutton_highlight_left.png" />
+    <EmbeddedResource Include="ToolButton\toolbutton_down_right.png" />
+    <EmbeddedResource Include="ToolButton\toolbutton_highlight_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScrollBar\downarrow.png" />
+    <EmbeddedResource Include="ScrollBar\ThumbBottom.png" />
+    <EmbeddedResource Include="ScrollBar\ThumbMiddle.png" />
+    <EmbeddedResource Include="ScrollBar\ThumbSpanBottom.png" />
+    <EmbeddedResource Include="ScrollBar\ThumbSpanTop.png" />
+    <EmbeddedResource Include="ScrollBar\ThumbTop.png" />
+    <EmbeddedResource Include="ScrollBar\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListBox\listitem_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComboBox\cmb_border_down.png" />
+    <EmbeddedResource Include="ComboBox\cmb_border_normal.png" />
+    <EmbeddedResource Include="ComboBox\cmb_arrow_down.png" />
+    <EmbeddedResource Include="ComboBox\cmb_arrow_highlight.png" />
+    <EmbeddedResource Include="ComboBox\cmb_arrow_normal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

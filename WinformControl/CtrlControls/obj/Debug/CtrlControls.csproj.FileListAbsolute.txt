@@ -1,0 +1,12 @@
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\CtrlControls.dll
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\CtrlControls.pdb
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\CtrlResource.dll
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\System.Design.dll
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\CtrlResource.pdb
+D:\Demos\自定义控件课件\CtrlControls\bin\Debug\zh-Hans\System.Design.resources.dll
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.csprojResolveAssemblyReference.cache
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.ExComboBox.ComboBoxEx.resources
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.ExTextBoxIcon.TextBoxIconEx.resources
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.csproj.GenerateResource.Cache
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.dll
+D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.pdb

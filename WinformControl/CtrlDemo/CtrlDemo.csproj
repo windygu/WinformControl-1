@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61CA43E3-99C8-4F85-BA83-5E137633C51C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CtrlDemo</RootNamespace>
+    <AssemblyName>CtrlDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmButton.Designer.cs">
+      <DependentUpon>FrmButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckBox.Designer.cs">
+      <DependentUpon>FrmCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComboBox.Designer.cs">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataGridView.Designer.cs">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForm.Designer.cs">
+      <DependentUpon>FrmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGroupBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGroupBox.Designer.cs">
+      <DependentUpon>FrmGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrouper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrouper.Designer.cs">
+      <DependentUpon>FrmGrouper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImageLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImageLink.Designer.cs">
+      <DependentUpon>FrmImageLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListBox.Designer.cs">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListView.Designer.cs">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgressBar.Designer.cs">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRadioButton.Designer.cs">
+      <DependentUpon>FrmRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScrollBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScrollBar.Designer.cs">
+      <DependentUpon>FrmScrollBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabControl.Designer.cs">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTextBox.Designer.cs">
+      <DependentUpon>FrmTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolButton.Designer.cs">
+      <DependentUpon>FrmToolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolStrip.Designer.cs">
+      <DependentUpon>FrmToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmButton.resx">
+      <DependentUpon>FrmButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckBox.resx">
+      <DependentUpon>FrmCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComboBox.resx">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataGridView.resx">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForm.resx">
+      <DependentUpon>FrmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGroupBox.resx">
+      <DependentUpon>FrmGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrouper.resx">
+      <DependentUpon>FrmGrouper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImageLink.resx">
+      <DependentUpon>FrmImageLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListBox.resx">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListView.resx">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgressBar.resx">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRadioButton.resx">
+      <DependentUpon>FrmRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScrollBar.resx">
+      <DependentUpon>FrmScrollBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabControl.resx">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTextBox.resx">
+      <DependentUpon>FrmTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolButton.resx">
+      <DependentUpon>FrmToolButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolStrip.resx">
+      <DependentUpon>FrmToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CtrlControls\CtrlControls.csproj">
+      <Project>{9E9EF7ED-8DC5-4498-ABD4-9AEE871DD500}</Project>
+      <Name>CtrlControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CtrlResource\CtrlResource.csproj">
+      <Project>{9D4A30F8-D2CC-4A32-93B1-B8FCF7304553}</Project>
+      <Name>CtrlResource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frameBorderEffect_mouseDownDraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frameBorderEffect_normalDraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messagebox18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_autorevert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_general.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_gletalone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_hotkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_identity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_instant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_intimity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_lean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_messagesafety.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_onlinefettle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_PreventAnnoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_QPlusPrivilage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_QQLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_QZonePrivilage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_remind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_safety1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_voice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setup_treeview_webconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textBoxEx.Keyword.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
