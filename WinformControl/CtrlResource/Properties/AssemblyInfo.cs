@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("CtrlResource")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("wangyunpeng")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("aptech")]
+[assembly: AssemblyCompany("www.mpnco.cn")]
 [assembly: AssemblyProduct("CtrlResource")]
-[assembly: AssemblyCopyright("Copyright © aptech 2013")]
+[assembly: AssemblyCopyright("Copyright © www.mpnco.cn 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
