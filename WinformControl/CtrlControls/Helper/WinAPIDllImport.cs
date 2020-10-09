@@ -1,6 +1,6 @@
-﻿using System;
+﻿using CtrlControls.Struct;
+using System;
 using System.Runtime.InteropServices;
-using CtrlControls.Struct;
 
 namespace CtrlControls.Helper
 {
@@ -10,7 +10,7 @@ namespace CtrlControls.Helper
         public static extern int ReleaseCapture();
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hwnd, int msg, int wParam, int lParam);
-        
+
         /// <summary>
         /// 创建一个圆角矩形区域
         /// </summary>

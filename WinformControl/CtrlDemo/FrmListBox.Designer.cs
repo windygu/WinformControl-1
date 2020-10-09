@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listBoxEx1 = new CtrlControls.ExListBox.ListBoxEx();
+            this.scrollbarExComponent1 = new CtrlControls.ExScrollBar.ScrollbarExComponent(this.components);
             this.SuspendLayout();
             // 
             // listBoxEx1
@@ -41,6 +43,7 @@
             this.listBoxEx1.Name = "listBoxEx1";
             this.listBoxEx1.Size = new System.Drawing.Size(228, 179);
             this.listBoxEx1.TabIndex = 0;
+            this.scrollbarExComponent1.SetUserCustomScrollbar(this.listBoxEx1, true);
             // 
             // FrmListBox
             // 
@@ -57,10 +60,6 @@
         #endregion
 
         private CtrlControls.ExListBox.ListBoxEx listBoxEx1;
-
-
-
-
-
+        private CtrlControls.ExScrollBar.ScrollbarExComponent scrollbarExComponent1;
     }
 }

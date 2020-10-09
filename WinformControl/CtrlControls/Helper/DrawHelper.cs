@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using CtrlControls.Enum;
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using CtrlControls.Enum;
 
 namespace CtrlControls.Helper
 {

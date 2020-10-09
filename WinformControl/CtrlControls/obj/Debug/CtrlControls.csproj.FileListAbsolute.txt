@@ -10,3 +10,17 @@ D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.ExTextBoxIcon
 D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.csproj.GenerateResource.Cache
 D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.dll
 D:\Demos\自定义控件课件\CtrlControls\obj\Debug\CtrlControls.pdb
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\CtrlControls.dll
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\CtrlControls.pdb
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\CtrlResource.dll
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\System.Design.dll
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\CtrlResource.pdb
+D:\github.com\WinformControl\WinformControl\CtrlControls\bin\Debug\zh-Hans\System.Design.resources.dll
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.csprojAssemblyReference.cache
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.ExComboBox.ComboBoxEx.resources
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.ExTextBoxIcon.TextBoxIconEx.resources
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.csproj.GenerateResource.cache
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.csproj.CoreCompileInputs.cache
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.csproj.CopyComplete
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.dll
+D:\github.com\WinformControl\WinformControl\CtrlControls\obj\Debug\CtrlControls.pdb

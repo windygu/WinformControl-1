@@ -28,12 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDataGridView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlEx1 = new CtrlControls.ExTabControl.TabControlEx();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridViewEx1 = new CtrlControls.ExDataGridView.DataGridViewEx();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colOperator = new CtrlControls.ExDataGridView.DataGridViewExLinkColumnEx();
+            this.colKeyWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSource = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colWaitTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLastTime = new CtrlControls.ExDataGridView.DataGridViewExCalendarColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colName1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,15 +55,7 @@
             this.colSource1 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colWaitTime1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLastTime1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCardName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colOperator = new CtrlControls.ExDataGridView.DataGridViewExLinkColumnEx();
-            this.colKeyWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSource = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.colWaitTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLastTime = new CtrlControls.ExDataGridView.DataGridViewExCalendarColumn();
+            this.scrollbarExComponent1 = new CtrlControls.ExScrollBar.ScrollbarExComponent(this.components);
             this.tabControlEx1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEx1)).BeginInit();
@@ -97,14 +99,14 @@
             this.dataGridViewEx1.AllowUserToAddRows = false;
             this.dataGridViewEx1.AllowUserToDeleteRows = false;
             this.dataGridViewEx1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewEx1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEx1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewEx1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEx1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colName,
@@ -129,6 +131,73 @@
             this.dataGridViewEx1.TabIndex = 1;
             this.dataGridViewEx1.TitleColorA = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(230)))), ((int)(((byte)(245)))));
             this.dataGridViewEx1.TitleColorB = System.Drawing.Color.White;
+            this.scrollbarExComponent1.SetUserCustomScrollbar(this.dataGridViewEx1, true);
+            // 
+            // colName
+            // 
+            this.colName.DataPropertyName = "Name";
+            this.colName.HeaderText = "访客名称";
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // colCardName
+            // 
+            this.colCardName.DataPropertyName = "CardName";
+            this.colCardName.HeaderText = "卡片名称";
+            this.colCardName.Name = "colCardName";
+            this.colCardName.ReadOnly = true;
+            // 
+            // colStatus
+            // 
+            this.colStatus.DataPropertyName = "Status";
+            this.colStatus.HeaderText = "状态";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
+            // 
+            // colCount
+            // 
+            this.colCount.DataPropertyName = "Count";
+            this.colCount.HeaderText = "访问次数";
+            this.colCount.Name = "colCount";
+            this.colCount.ReadOnly = true;
+            // 
+            // colOperator
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.colOperator.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colOperator.HeaderText = "访客操作";
+            this.colOperator.Name = "colOperator";
+            this.colOperator.ReadOnly = true;
+            this.colOperator.Width = 270;
+            // 
+            // colKeyWord
+            // 
+            this.colKeyWord.DataPropertyName = "KeyWord";
+            this.colKeyWord.HeaderText = "关键词";
+            this.colKeyWord.Name = "colKeyWord";
+            this.colKeyWord.ReadOnly = true;
+            // 
+            // colSource
+            // 
+            this.colSource.DataPropertyName = "Source";
+            this.colSource.HeaderText = "访问来源";
+            this.colSource.Name = "colSource";
+            this.colSource.ReadOnly = true;
+            this.colSource.Width = 120;
+            // 
+            // colWaitTime
+            // 
+            this.colWaitTime.DataPropertyName = "WaitTime";
+            this.colWaitTime.HeaderText = "等待时间";
+            this.colWaitTime.Name = "colWaitTime";
+            this.colWaitTime.ReadOnly = true;
+            // 
+            // colLastTime
+            // 
+            this.colLastTime.DataPropertyName = "LastTime";
+            this.colLastTime.HeaderText = "最后时间";
+            this.colLastTime.Name = "colLastTime";
+            this.colLastTime.ReadOnly = true;
             // 
             // tabPage2
             // 
@@ -166,6 +235,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(680, 353);
             this.dataGridView1.TabIndex = 0;
+            this.scrollbarExComponent1.SetUserCustomScrollbar(this.dataGridView1, true);
             // 
             // colName1
             // 
@@ -231,72 +301,6 @@
             this.colLastTime1.Name = "colLastTime1";
             this.colLastTime1.ReadOnly = true;
             // 
-            // colName
-            // 
-            this.colName.DataPropertyName = "Name";
-            this.colName.HeaderText = "访客名称";
-            this.colName.Name = "colName";
-            this.colName.ReadOnly = true;
-            // 
-            // colCardName
-            // 
-            this.colCardName.DataPropertyName = "CardName";
-            this.colCardName.HeaderText = "卡片名称";
-            this.colCardName.Name = "colCardName";
-            this.colCardName.ReadOnly = true;
-            // 
-            // colStatus
-            // 
-            this.colStatus.DataPropertyName = "Status";
-            this.colStatus.HeaderText = "状态";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.ReadOnly = true;
-            // 
-            // colCount
-            // 
-            this.colCount.DataPropertyName = "Count";
-            this.colCount.HeaderText = "访问次数";
-            this.colCount.Name = "colCount";
-            this.colCount.ReadOnly = true;
-            // 
-            // colOperator
-            // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            this.colOperator.DefaultCellStyle = dataGridViewCellStyle2;
-            this.colOperator.HeaderText = "访客操作";
-            this.colOperator.Name = "colOperator";
-            this.colOperator.ReadOnly = true;
-            this.colOperator.Width = 270;
-            // 
-            // colKeyWord
-            // 
-            this.colKeyWord.DataPropertyName = "KeyWord";
-            this.colKeyWord.HeaderText = "关键词";
-            this.colKeyWord.Name = "colKeyWord";
-            this.colKeyWord.ReadOnly = true;
-            // 
-            // colSource
-            // 
-            this.colSource.DataPropertyName = "Source";
-            this.colSource.HeaderText = "访问来源";
-            this.colSource.Name = "colSource";
-            this.colSource.ReadOnly = true;
-            this.colSource.Width = 120;
-            // 
-            // colWaitTime
-            // 
-            this.colWaitTime.DataPropertyName = "WaitTime";
-            this.colWaitTime.HeaderText = "等待时间";
-            this.colWaitTime.Name = "colWaitTime";
-            this.colWaitTime.ReadOnly = true;
-            // 
-            // colLastTime
-            // 
-            this.colLastTime.DataPropertyName = "LastTime";
-            this.colLastTime.HeaderText = "最后时间";
-            this.colLastTime.Name = "colLastTime";
-            this.colLastTime.ReadOnly = true;
-            // 
             // FrmDataGridView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -305,7 +309,6 @@
             this.Controls.Add(this.tabControlEx1);
             this.Name = "FrmDataGridView";
             this.Text = "FrmDataGridView";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControlEx1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEx1)).EndInit();
@@ -340,6 +343,6 @@
         private System.Windows.Forms.DataGridViewLinkColumn colSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colWaitTime1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLastTime1;
-
+        private CtrlControls.ExScrollBar.ScrollbarExComponent scrollbarExComponent1;
     }
 }

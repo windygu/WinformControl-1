@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\DefWindowProc.cs" />
+    <Compile Include="Enum\EGraphDirection.cs" />
     <Compile Include="Enum\EImageListDrawFlags.cs" />
     <Compile Include="Enum\EMouseState.cs" />
     <Compile Include="Enum\ERoundStyle.cs" />
@@ -178,19 +179,17 @@
     <Compile Include="ExRadioButton\RadioButtonEx.Var.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ExScrollBar\ScrollbarEx.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ExScrollBar\ScrollbarEx.Method.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ExScrollBar\ScrollbarEx.Prop.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ExScrollBar\ScrollbarEx.Var.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ExScrollBar\ScrollbarEx.cs" />
+    <Compile Include="ExScrollBar\ScrollbarExComponent.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ExScrollBar\ScrollbarExControlDesigner.cs" />
+    <Compile Include="ExScrollBar\ScrollbarHEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExScrollBar\ScrollbarVEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ExTabControl\TabControlEx.Method.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -246,6 +245,7 @@
     <Compile Include="ExToolStrip\ToolStripExRenderer.Prop.cs" />
     <Compile Include="ExToolStrip\ToolStripExRenderer.Var.cs" />
     <Compile Include="Helper\ColorHelper.cs" />
+    <Compile Include="Helper\ScrollBarHelper.cs" />
     <Compile Include="Helper\DrawHelper.cs" />
     <Compile Include="Helper\GraphicsPathHelper.cs" />
     <Compile Include="Helper\TextHelper.cs" />

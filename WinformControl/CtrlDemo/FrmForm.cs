@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using CtrlControls.ExForm;
+﻿using CtrlControls.ExForm;
 using CtrlControls.ExMenu;
 using CtrlControls.ExToolStrip;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace CtrlDemo
 {
@@ -27,6 +21,7 @@ namespace CtrlDemo
             this.btnListBox.Click += (sender, e) => new FrmListBox().Show();
             this.btnComboBox.Click += (sender, e) => new FrmComboBox().Show();
             this.btnGrouper.Click += (sender, e) => new FrmGrouper().Show();
+            this.btnScrollBar.Click += (sender, e) => new FrmScrollBar().Show();
         }
     }
 }

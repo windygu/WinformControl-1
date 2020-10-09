@@ -3,3 +3,8 @@ D:\Demos\自定义控件课件\CtrlResource\bin\Debug\CtrlResource.pdb
 D:\Demos\自定义控件课件\CtrlResource\obj\Debug\CtrlResource.csprojResolveAssemblyReference.cache
 D:\Demos\自定义控件课件\CtrlResource\obj\Debug\CtrlResource.dll
 D:\Demos\自定义控件课件\CtrlResource\obj\Debug\CtrlResource.pdb
+D:\github.com\WinformControl\WinformControl\CtrlResource\bin\Debug\CtrlResource.dll
+D:\github.com\WinformControl\WinformControl\CtrlResource\bin\Debug\CtrlResource.pdb
+D:\github.com\WinformControl\WinformControl\CtrlResource\obj\Debug\CtrlResource.csproj.CoreCompileInputs.cache
+D:\github.com\WinformControl\WinformControl\CtrlResource\obj\Debug\CtrlResource.dll
+D:\github.com\WinformControl\WinformControl\CtrlResource\obj\Debug\CtrlResource.pdb

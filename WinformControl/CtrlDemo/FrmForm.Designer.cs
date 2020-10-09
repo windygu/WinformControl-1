@@ -72,7 +72,9 @@
             this.btnGroupBox = new System.Windows.Forms.Button();
             this.btnListBox = new System.Windows.Forms.Button();
             this.btnComboBox = new System.Windows.Forms.Button();
-            this.scrollbarEx1 = new CtrlControls.ExScrollBar.ScrollbarEx();
+            this.scrollbarHEx1 = new CtrlControls.ExScrollBar.ScrollbarHEx();
+            this.scrollbarVEx1 = new CtrlControls.ExScrollBar.ScrollbarVEx();
+            this.btnScrollBar = new CtrlControls.ExButton.ButtonEx();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -312,7 +314,7 @@
             this.btnContextMenu.FocusImage = ((System.Drawing.Image)(resources.GetObject("btnContextMenu.FocusImage")));
             this.btnContextMenu.Image = null;
             this.btnContextMenu.IsShowBorder = true;
-            this.btnContextMenu.Location = new System.Drawing.Point(270, 399);
+            this.btnContextMenu.Location = new System.Drawing.Point(270, 304);
             this.btnContextMenu.MoveImage = ((System.Drawing.Image)(resources.GetObject("btnContextMenu.MoveImage")));
             this.btnContextMenu.Name = "btnContextMenu";
             this.btnContextMenu.NormalImage = ((System.Drawing.Image)(resources.GetObject("btnContextMenu.NormalImage")));
@@ -554,33 +556,77 @@
             this.btnComboBox.Text = "ComboBox";
             this.btnComboBox.UseVisualStyleBackColor = true;
             // 
-            // scrollbarEx1
+            // scrollbarHEx1
             // 
-            this.scrollbarEx1.ChannelColor = System.Drawing.Color.DodgerBlue;
-            this.scrollbarEx1.DownArrowImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.DownArrowImage")));
-            this.scrollbarEx1.LargeChange = 10;
-            this.scrollbarEx1.Location = new System.Drawing.Point(458, 137);
-            this.scrollbarEx1.Maximum = 100;
-            this.scrollbarEx1.Minimum = 0;
-            this.scrollbarEx1.MinimumSize = new System.Drawing.Size(15, 92);
-            this.scrollbarEx1.Name = "scrollbarEx1";
-            this.scrollbarEx1.Size = new System.Drawing.Size(15, 251);
-            this.scrollbarEx1.SmallChange = 1;
-            this.scrollbarEx1.TabIndex = 18;
-            this.scrollbarEx1.ThumbBottomImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.ThumbBottomImage")));
-            this.scrollbarEx1.ThumbBottomSpanImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.ThumbBottomSpanImage")));
-            this.scrollbarEx1.ThumbMiddleImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.ThumbMiddleImage")));
-            this.scrollbarEx1.ThumbTopImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.ThumbTopImage")));
-            this.scrollbarEx1.ThumbTopSpanImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.ThumbTopSpanImage")));
-            this.scrollbarEx1.UpArrowImage = ((System.Drawing.Image)(resources.GetObject("scrollbarEx1.UpArrowImage")));
-            this.scrollbarEx1.Value = 0;
+            this.scrollbarHEx1.BtnWidth = 18;
+            this.scrollbarHEx1.ConerRadius = 2;
+            this.scrollbarHEx1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.scrollbarHEx1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.scrollbarHEx1.IsRadius = true;
+            this.scrollbarHEx1.IsShowRect = false;
+            this.scrollbarHEx1.LargeChange = 10;
+            this.scrollbarHEx1.Location = new System.Drawing.Point(229, 412);
+            this.scrollbarHEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.scrollbarHEx1.Maximum = 100;
+            this.scrollbarHEx1.Minimum = 0;
+            this.scrollbarHEx1.MinimumSize = new System.Drawing.Size(0, 10);
+            this.scrollbarHEx1.Name = "scrollbarHEx1";
+            this.scrollbarHEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.scrollbarHEx1.RectWidth = 1;
+            this.scrollbarHEx1.Size = new System.Drawing.Size(217, 18);
+            this.scrollbarHEx1.SmallChange = 1;
+            this.scrollbarHEx1.TabIndex = 18;
+            this.scrollbarHEx1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(180)))), ((int)(((byte)(228)))));
+            this.scrollbarHEx1.Value = 0;
+            // 
+            // scrollbarVEx1
+            // 
+            this.scrollbarVEx1.BtnHeight = 18;
+            this.scrollbarVEx1.ConerRadius = 2;
+            this.scrollbarVEx1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.scrollbarVEx1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.scrollbarVEx1.IsRadius = true;
+            this.scrollbarVEx1.IsShowRect = false;
+            this.scrollbarVEx1.LargeChange = 10;
+            this.scrollbarVEx1.Location = new System.Drawing.Point(454, 153);
+            this.scrollbarVEx1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.scrollbarVEx1.Maximum = 100;
+            this.scrollbarVEx1.Minimum = 0;
+            this.scrollbarVEx1.MinimumSize = new System.Drawing.Size(10, 0);
+            this.scrollbarVEx1.Name = "scrollbarVEx1";
+            this.scrollbarVEx1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.scrollbarVEx1.RectWidth = 1;
+            this.scrollbarVEx1.Size = new System.Drawing.Size(18, 282);
+            this.scrollbarVEx1.SmallChange = 5;
+            this.scrollbarVEx1.TabIndex = 19;
+            this.scrollbarVEx1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(180)))), ((int)(((byte)(228)))));
+            this.scrollbarVEx1.Value = 0;
+            // 
+            // btnScrollBar
+            // 
+            this.btnScrollBar.BackColor = System.Drawing.Color.Transparent;
+            this.btnScrollBar.BorderImage = ((System.Drawing.Image)(resources.GetObject("btnScrollBar.BorderImage")));
+            this.btnScrollBar.DownImage = ((System.Drawing.Image)(resources.GetObject("btnScrollBar.DownImage")));
+            this.btnScrollBar.FocusImage = ((System.Drawing.Image)(resources.GetObject("btnScrollBar.FocusImage")));
+            this.btnScrollBar.Image = null;
+            this.btnScrollBar.IsShowBorder = true;
+            this.btnScrollBar.Location = new System.Drawing.Point(270, 365);
+            this.btnScrollBar.MoveImage = ((System.Drawing.Image)(resources.GetObject("btnScrollBar.MoveImage")));
+            this.btnScrollBar.Name = "btnScrollBar";
+            this.btnScrollBar.NormalImage = ((System.Drawing.Image)(resources.GetObject("btnScrollBar.NormalImage")));
+            this.btnScrollBar.Size = new System.Drawing.Size(96, 28);
+            this.btnScrollBar.TabIndex = 20;
+            this.btnScrollBar.Text = "ScrollBar";
+            this.btnScrollBar.UseVisualStyleBackColor = false;
             // 
             // FrmForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 525);
-            this.Controls.Add(this.scrollbarEx1);
+            this.Controls.Add(this.btnScrollBar);
+            this.Controls.Add(this.scrollbarVEx1);
+            this.Controls.Add(this.scrollbarHEx1);
             this.Controls.Add(this.btnComboBox);
             this.Controls.Add(this.btnListBox);
             this.Controls.Add(this.toolStrip1);
@@ -599,6 +645,7 @@
             this.Controls.Add(this.imageLinkEx1);
             this.Name = "FrmForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SystemButton = CtrlControls.Enum.ESystemButton.CloseMinMax;
             this.Text = "王云鹏是北大青鸟唐城中心第一帅哥";
             this.contextMenuStrip1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
@@ -652,7 +699,8 @@
         private System.Windows.Forms.Button btnGroupBox;
         private System.Windows.Forms.Button btnListBox;
         private System.Windows.Forms.Button btnComboBox;
-        private CtrlControls.ExScrollBar.ScrollbarEx scrollbarEx1;
-
+        private CtrlControls.ExScrollBar.ScrollbarHEx scrollbarHEx1;
+        private CtrlControls.ExScrollBar.ScrollbarVEx scrollbarVEx1;
+        private CtrlControls.ExButton.ButtonEx btnScrollBar;
     }
 }

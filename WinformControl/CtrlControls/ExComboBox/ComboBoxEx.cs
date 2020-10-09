@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.ComponentModel;
-using CtrlControls.Enum;
-using System.Drawing;
-using CtrlControls.ExPopup;
-using CtrlResource;
+﻿using CtrlControls.Enum;
 using CtrlControls.ExListBox;
+using CtrlControls.ExPopup;
 using CtrlControls.ExTextBox;
 using CtrlControls.Helper;
+using CtrlResource;
+using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace CtrlControls.ExComboBox
 {
